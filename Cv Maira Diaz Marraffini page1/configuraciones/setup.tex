@@ -1,0 +1,49 @@
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+% Change the colours if you want to
+
+\definecolor{VerdeFluor}{HTML}{00ff8b}
+\definecolor{Negro}{HTML}{000000}
+\definecolor{GrisPrimario}{HTML}{454545}
+\definecolor{GrisSecundario}{HTML}{777777}
+
+\colorlet{heading}{VerdeFluor}
+\colorlet{accent}{Negro}
+\colorlet{emphasis}{GrisPrimario}
+\colorlet{body}{GrisSecundario}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+%\usepackage[colorlinks]{hyperref}
+\usepackage{hyperref}
+
+%para multiples columnas 
+\usepackage{multicol}
+
+%setea los márgenes de la hoja (para dejar más espacio)
+\geometry{top=0.7cm,bottom=0.7cm} 
